@@ -285,6 +285,10 @@ svg * {
   }
 }
 
+html.is-lock {
+  overflow: hidden;
+}
+
 body {
   font-size: clamp(0.875rem, 0.8112745098rem + 0.2614379085vw, 1.125rem);
   font-family: var(--font-family-base);
@@ -486,7 +490,22 @@ button[aria-label]::before {
   border-radius: 0.5rem;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 0.625rem 6.25rem;
+}
+@keyframes scrolling-header {
+  to {
+    box-shadow: 0 0 1rem 0 var(--color-dark-40);
+  }
+}
 .header__promo {
+  background-color: var(--color-dark);
   padding-block: 1.25rem;
   text-align: center;
   border-block-end: var(--border);
