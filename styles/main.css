@@ -1003,6 +1003,8 @@ button[aria-label]::before {
   padding-left: 5rem;
   padding-bottom: 5rem;
   background: url("../../images/resources-preview/bg.png") 0 0/cover no-repeat;
+  background-image: url("../../images/resources-preview/bg.png");
+  background-image: url("../../future-tech/images/resources-preview/bg.png");
 }
 @media (width <= 90.06125rem) {
   .hero__resources-preview {
