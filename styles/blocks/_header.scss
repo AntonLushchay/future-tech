@@ -27,12 +27,12 @@
     }
 
     &__body {
+        padding-block: rem(24);
+        background-color: var(--color-dark-10);
+
         @include mobile {
             padding-block: rem(20);
         }
-
-        padding-block: rem(24);
-        background-color: var(--color-dark-10);
 
         &-inner {
             display: flex;
