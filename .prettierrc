@@ -6,7 +6,7 @@
     "trailingComma": "all",
     "bracketSpacing": true,
     "requireConfig": true,
-    "printWidth": 120,
-    "bracketSameLine": true,
+    "printWidth": 100,
+    "bracketSameLine": false,
     "htmlWhitespaceSensitivity": "ignore"
 }

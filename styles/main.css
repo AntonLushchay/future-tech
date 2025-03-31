@@ -417,7 +417,7 @@ a[class] {
 }
 
 :focus-visible {
-  outline: 0.125rem dsash var(--color-light);
+  outline: 0.125rem dashed var(--color-light);
   outline-offset: 0.25rem;
   transition-duration: 0s !important;
 }
