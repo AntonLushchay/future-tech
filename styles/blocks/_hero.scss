@@ -107,6 +107,8 @@
         &-item {
             --paddingX: #{rem(80)};
 
+            position: relative;
+
             padding-block: rem(50);
 
             @include laptop {
