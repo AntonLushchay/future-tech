@@ -26,6 +26,8 @@
 @use 'blocks/card';
 
 @use 'blocks/tabs.scss';
-@use 'blocks/person-card.scss';
-@use 'blocks/blog-actions.scss';
-@use 'blocks/blog-card.scss';
+@use 'blocks/person-card';
+@use 'blocks/blog-actions';
+@use 'blocks/blog-card';
+
+@use 'blocks/download-info';
