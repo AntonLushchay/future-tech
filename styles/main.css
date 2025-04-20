@@ -1551,10 +1551,10 @@ button[aria-label]::before {
   --size: 1.5rem;
   width: var(--size);
   height: var(--size);
-  background: url("../../icons/star-grey.svg") center/contain no-repeat;
+  background: url("../../icons/star_grey.svg") center/contain no-repeat;
 }
 .rating-view__star.is-active {
-  background: url("../../icons/star-yellow.svg") center/contain no-repeat;
+  background-image: url("../../icons/star_yellow.svg");
 }
 @media (width <= 90.06125rem) {
   .rating-view__star {
@@ -1587,7 +1587,7 @@ button[aria-label]::before {
   position: relative;
   padding: clamp(1.25rem, 1.0906862745rem + 0.6535947712vw, 1.875rem);
   padding-top: clamp(1.875rem, 1.556372549rem + 1.3071895425vw, 3.125rem);
-  color: var(color-light);
+  color: var(--color-light);
   text-align: center;
 }
 .review-card__rating-view {
