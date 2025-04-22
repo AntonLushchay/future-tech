@@ -23,33 +23,20 @@
     }
 
     &__link {
-        --circleSize: #{rem(52)};
-        --circleMarfinLeft: #{rem(20)};
-
         display: grid;
         row-gap: rem(4);
-        padding-right: calc(var(--circleSize) + var(--circleMarfinLeft));
+        padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
 
         @include laptop {
-            --circleSize: #{rem(44)};
-            --circleMarfinLeft: #{rem(14)};
-
             row-gap: rem(2);
         }
+    }
 
-        @include mobile {
-            --circleSize: #{rem(40)};
-        }
+    &__title {
+        @include fluid-text(20, 16);
 
-        &::after {
-            @include square(var(--circleSize));
-            @include abs-y;
-
-            content: '';
-            right: rem(15);
-            background: url('../icons/arrow-top-right_black.svg') center no-repeat var(--color-accent);
-            border-radius: 50%;
-        }
+        font-family: var(--font-family-base);
+        font-weight: 600;
     }
 
     &__ditails {
