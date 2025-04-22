@@ -79,6 +79,11 @@ h4,
 
 h5,
 .h5 {
+    @include fluid-text(24, 18);
+}
+
+h6,
+.h6 {
     @include fluid-text(20, 16);
 }
 

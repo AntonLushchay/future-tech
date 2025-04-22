@@ -416,6 +416,11 @@ h4,
 
 h5,
 .h5 {
+  font-size: clamp(1.125rem, 1.0294117647rem + 0.3921568627vw, 1.5rem);
+}
+
+h6,
+.h6 {
   font-size: clamp(1rem, 0.9362745098rem + 0.2614379085vw, 1.25rem);
 }
 
