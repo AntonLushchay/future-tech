@@ -1,7 +1,20 @@
 @use '../helpers' as *;
 
 .news {
+    display: grid;
     padding-block: fluid(80, 40);
+    row-gap: rem(80);
+
+    @include laptop {
+        row-gap: rem(40);
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1rem;
+    }
 
     &__list {
         display: grid;
