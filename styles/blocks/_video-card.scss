@@ -3,6 +3,7 @@
 .video-card {
     display: grid;
     row-gap: rem(30);
+    // height: 100%;
 
     @include laptop {
         row-gap: rem(20);
@@ -11,5 +12,11 @@
     &__body {
         display: grid;
         row-gap: fluid(10, 4);
+    }
+
+    &__link {
+        @include laptop-above {
+            width: fluid(207, 157);
+        }
     }
 }

@@ -8,9 +8,12 @@
     }
 }
 
-@function fluid($max: 100, $min: 10) {
-    $maxViewportWidth: 1920;
-    $minViewportWidth: 390;
+@function fluid($max: 100, $min: 10, $maxViewportWidth: 1920, $minViewportWidth: 390) {
+    @if $max <= $min {
+        @error 'Максимальное значение должно быть больше минимального!';
+    }
+    // $maxViewportWidth: 1920;
+    // $minViewportWidth: 390;
 
     $maxSize: math.div($max, 16);
     $minSize: math.div($min, 16);
@@ -20,9 +23,5 @@
     $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
     $yAxisIntersection: -$minWidth * $slope + $minSize;
 
-    @return clamp(
-        #{$minSize * 1rem},
-        #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
-        #{$maxSize * 1rem}
-    );
+    @return clamp(#{$minSize * 1rem}, #{$yAxisIntersection * 1rem} + #{$slope * 100vw}, #{$maxSize * 1rem});
 }

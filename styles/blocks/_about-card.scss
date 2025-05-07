@@ -3,6 +3,7 @@
 .about-card {
     display: flex;
     flex-direction: column;
+    height: 100%;
     row-gap: fluid(20, 10);
 
     &__title {
