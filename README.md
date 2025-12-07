@@ -2,6 +2,7 @@
 
 ![Status](https://img.shields.io/badge/status-Completed-darkgreen)
 ![Type](https://img.shields.io/badge/type-Educational-orange)
+![Deploy](https://img.shields.io/badge/deploy-GitHub%20Pages-blue)
 ![Audience](https://img.shields.io/badge/audience-Portfolio-purple)
 
 ![HTML](https://img.shields.io/badge/HTML-5-red?logo=html5)
